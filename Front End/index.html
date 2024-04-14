@@ -11,12 +11,15 @@
 <body>
   
   <div class="logo">
+    <hr class="horizontal">
       <img src="Images/logo_2.jpg" alt="Logo">
+      
   </div>
   <div class="container">
   <h2>SIGN IN</h2>
-  <form action="your_backend_script.php" method="POST">
+  <form action="login.php" method="POST">
     <fieldset>
+
       <div class="form-group">
           <label for="username">USERNAME</label>
           <input type="text" id="username" name="username"   required >
@@ -26,10 +29,12 @@
           <input type="password" id="password" name="password" required>
       </div>
       <div class="forgot_password">
-        <button type="button" id="forgot">Forgot Password ?</button>
+        <a href="forgot_password.html" rel="Reset Password">
+          <button type="button" id="forgot">Forgot Password ?</button>
+        </a>
         </div>
         <div class="form-group">
-            <button type="submit">SIGN IN</button>
+            <button type="submit" value="Login">SIGN IN</button>
         </div>
             <div class="forgot_password">
                 <a href="sign_up.html" rel="Sign up page">
